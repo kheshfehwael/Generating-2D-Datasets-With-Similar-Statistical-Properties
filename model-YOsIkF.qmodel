@@ -159,8 +159,7 @@
                           </DElement>
                          </base-DElement>
                          <object>{635a04d2-243f-4279-98e0-d3c52f0af1e4}</object>
-                         <name>Das neue konzept theoretisch analysieren
-</name>
+                         <name>Das neue konzept theoretisch analysieren</name>
                          <pos>x:420;y:230</pos>
                          <rect>x:-110;y:-30;w:220;h:60</rect>
                          <auto-sized>false</auto-sized>
@@ -259,10 +258,10 @@ incl. neue Muster entwerfen </name>
                           </DElement>
                          </base-DElement>
                          <object>{47cbbbf0-36ff-4f0d-8fd4-3271e2700997}</object>
-                         <name>ani. Plot  entwicklen
+                         <name>animierten  Plot  entwicklen
 for output with JS datei</name>
                          <pos>x:940;y:235</pos>
-                         <rect>x:-65;y:-45;w:130;h:90</rect>
+                         <rect>x:-75;y:-45;w:150;h:90</rect>
                          <auto-sized>false</auto-sized>
                          <visual-role>0</visual-role>
                         </DObject>
@@ -684,17 +683,55 @@ for output with JS datei</name>
                          <uid>{032957d3-64c3-41d7-a8fd-0d35c45aae40}</uid>
                         </DElement>
                        </base-DElement>
-                       <text>Unsere Idee wäre : 
-mit vier bewegten  punkten statt einen bewegten  
-punkt  das Muste parallel r erstellen ?</text>
-                       <pos>x:425;y:305</pos>
-                       <rect>x:-130;y:-30;w:260;h:60</rect>
+                       <text>Implementierungs Varianten:
+- vorhandenes Konzept übernehmen (simulated annealing):
+eventuell parallelisieren, z.B.mehrere Punkte gleichzeitig manipulieren.
+- genetische algorythmen:
+Wir haben beide noch keine praktische Erfahrung damit. Ist es sinnvoll es so zu machen?
+ Haben Sie eventuell Literatur die uns dabei helfen könnte?</text>
+                       <pos>x:425;y:315</pos>
+                       <rect>x:-270;y:-55;w:540;h:110</rect>
+                      </DBoundary>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DBoundary">
+                      <DBoundary>
+                       <base-DElement>
+                        <DElement>
+                         <uid>{cdab4748-a7be-4c9d-b65f-11cc5b236c2c}</uid>
+                        </DElement>
+                       </base-DElement>
+                       <text>In Bezug auf das Unit-testing Framework : 
+-musste da auch eine Anbindung mit JEnkins,Travis CI exsistieren, so dass das Projekt 
+durch Integrationstest gestestet wird. Oder reicht es nur aus, 
+wenn man das Projekt mit Testdatei erweitert. 
+ </text>
+                       <pos>x:650;y:520</pos>
+                       <rect>x:-220;y:-45;w:440;h:90</rect>
+                      </DBoundary>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DBoundary">
+                      <DBoundary>
+                       <base-DElement>
+                        <DElement>
+                         <uid>{ce0f9679-ac38-4661-9df2-ce21c4be9b87}</uid>
+                        </DElement>
+                       </base-DElement>
+                       <text>Allgemein:
+Was sind die wichtigsten Hauptziele? Wo soll besonders auf Optimierung geachtet werden?
+Wir sind uns etwas unsicher, wo wir den Fokus legen sollen, da theoretisch bei vielen
+Bereichen optimierungsbedarf herscht (z.B. beim Input/Output der Daten)</text>
+                       <pos>x:220;y:715</pos>
+                       <rect>x:-230;y:-45;w:460;h:90</rect>
                       </DBoundary>
                      </instance>
                     </item>
                    </qlist>
                   </elements>
-                  <last-modified>1636294349986</last-modified>
+                  <last-modified>1636722642897</last-modified>
                   <toolbarid>Activities</toolbarid>
                  </MDiagram>
                 </base-MDiagram>
@@ -1768,8 +1805,7 @@ punkt  das Muste parallel r erstellen ?</text>
                     <uid>{635a04d2-243f-4279-98e0-d3c52f0af1e4}</uid>
                    </MElement>
                   </base-MElement>
-                  <name>Das neue konzept theoretisch analysieren
-</name>
+                  <name>Das neue konzept theoretisch analysieren</name>
                   <relations>
                    <handles>
                     <handles>
@@ -2131,7 +2167,7 @@ incl. neue Muster entwerfen </name>
                     <uid>{47cbbbf0-36ff-4f0d-8fd4-3271e2700997}</uid>
                    </MElement>
                   </base-MElement>
-                  <name>ani. Plot  entwicklen
+                  <name>animierten  Plot  entwicklen
 for output with JS datei</name>
                   <relations>
                    <handles>
