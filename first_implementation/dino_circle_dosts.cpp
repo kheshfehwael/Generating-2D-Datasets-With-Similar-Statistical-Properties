@@ -129,9 +129,7 @@ float  min_vec(vector <float> vec){
 vector<float> get_vec_dis(float x,float y,vector<vector<float>> xss){
     vector<float> erg(xss.size());
     for (int i = 0; i < xss.size(); ++i) {
-        for (int j = 0; j < 2; ++j) {
-            erg[i] = abs(point_distance(xss[i][j], xss[i][j], x ,y) );
-        }
+        erg[i] = abs(point_distance(xss[i][0], xss[i][1], x ,y) );
     }
     return erg;
 }
@@ -159,101 +157,90 @@ auto perturb(vector<float> x, vector<float> y,float temp,int length, float allow
     bool found = 0;
     bool do_bad = zero_to_one(re) < temp;
 
-    string target ("dots");
+    string target ;
 
-        if(target == "circle")
-        {
-            // coordinates of the circle
-            old_dis = abs(point_distance(x_el,y_el,cx,cy)-r);
-            // shake seems to be relevant and the optimum depends on the init data set.
-            // e.g. the angled blob data set had better results with shake = 0.5 (?)
-            found = 0;
-            while(!found){
-                x1 = x_el + normal_plus_minus_one(re)*shake;
-                y1 = y_el + normal_plus_minus_one(re)*shake;
-                new_dis = abs(point_distance(x1,y1,cx,cy)-r);
-                if(old_dis>new_dis || new_dis<allowed || do_bad || y1 > y_bounds[0] || y1  < y_bounds[1] ||  x1 > x_bounds[0] || x1 < x_bounds[1] ){
-                    x[element] = x1;
-                    y[element] = y1;
-                    found = 1;
-                }
-            }
+	if(target == "circle")
+	{
+		// coordinates of the circle
+		old_dis = abs(point_distance(x_el,y_el,cx,cy)-r);
+		// shake seems to be relevant and the optimum depends on the init data set.
+		// e.g. the angled blob data set had better results with shake = 0.5 (?)
+		found = 0;
+		while(!found){
+			x1 = x_el + normal_plus_minus_one(re)*shake;
+			y1 = y_el + normal_plus_minus_one(re)*shake;
+			new_dis = abs(point_distance(x1,y1,cx,cy)-r);
+			if((old_dis>new_dis || new_dis<allowed || do_bad) && y1 > y_bounds[0] && y1  < y_bounds[1] &&  x1 > x_bounds[0] && x1 < x_bounds[1] ){
+				x[element] = x1;
+				y[element] = y1;
+				found = 1;
+			}
+		}
 
-        }
+	}
 
-        else if(target == "dots")
-        {
+	else if(target == "dots")
+	{
 // create a grid of "cluster points" and move if you are getting closer
 
-            vector<float> xs = {25,50,75};
-            vector<float> ys = {20,50,80};
+		vector<float> xs = {25,50,75};
+		vector<float> ys = {20,50,80};
 
-            vector<vector<float>> xss  = itertools_product(xs,ys);
-            vector<float> erg =  get_vec_dis(cx,cy,xss);
-            new_dis = min_vec(erg);
+		vector<vector<float>> xss  = itertools_product(xs,ys);
+		vector<float> erg =  get_vec_dis(x_el,y_el,xss);
+		old_dis = min_vec(erg);
 
-            // shake seems to be relevant and the optimum depends on the init data set.
-            // e.g. the angled blob data set had better results with shake = 0.5 (?)
-            found = false;
-            while(!found){
+		// shake seems to be relevant and the optimum depends on the init data set.
+		// e.g. the angled blob data set had better results with shake = 0.5 (?)
+		while(!found){
 
-                x1 = x_el + normal_plus_minus_one(re)*shake;
-                y1 = y_el + normal_plus_minus_one(re)*shake;
+			x1 = x_el + normal_plus_minus_one(re)*shake;
+			y1 = y_el + normal_plus_minus_one(re)*shake;
 
-                erg =  get_vec_dis(x1,y1,xss);
-                new_dis = min_vec(erg);
-                    // her added the y_bounds vector to compare
-                if(old_dis>new_dis || new_dis<allowed || do_bad || y1 > y_bounds[0] || y1  < y_bounds[1] ||  x1 > x_bounds[0] || x1 < x_bounds[1] ){
-                    x[element] = x1;
-                    y[element] = y1;
-                    found = 1;
-                }
-            }
+			erg =  get_vec_dis(x1,y1,xss);
+			new_dis = min_vec(erg);
+				// her added the y_bounds vector to compare
+			if((old_dis>new_dis || new_dis<allowed || do_bad) && y1 > y_bounds[0] && y1  < y_bounds[1] &&  x1 > x_bounds[0] && x1 < x_bounds[1] ){
+				x[element] = x1;
+				y[element] = y1;
+				found = 1;
+			}
+		}
+		//cout << "Test ";
+	}
 
-        }
+	else {
+		vector<float> rs;
+		rs.push_back(18);
+		rs.push_back(37);
+		old_dis = 0;
 
-        else {
+		float val1 = abs(point_distance(x_el, y_el, cx, cy) - rs[0]);
+		float val2 = abs(point_distance(x_el, y_el, cx, cy) - rs[1]);
 
-
-                vector<float> rs;
-                rs.push_back(18);
-                rs.push_back(37);
-                old_dis = 0;
-
-                float val1 = abs(point_distance(x_el, y_el, cx, cy) - rs[0]);
-                float val2 = abs(point_distance(x_el, y_el, cx, cy) - rs[1]);
-
-                old_dis = std::min(val1, val2);
-                // shake seems to be relevant and the optimum depends on the init data set.
-                // e.g. the angled blob data set had better results with shake = 0.5 (?)
+		old_dis = std::min(val1, val2);
+		// shake seems to be relevant and the optimum depends on the init data set.
+		// e.g. the angled blob data set had better results with shake = 0.5 (?)
 
 
 
-                while (!found) {
+		while (!found) {
 
-                    x1 = x_el + normal_plus_minus_one(re) * shake;
-                    y1 = y_el + normal_plus_minus_one(re) * shake;
+			x1 = x_el + normal_plus_minus_one(re) * shake;
+			y1 = y_el + normal_plus_minus_one(re) * shake;
 
-                    val1 = abs(point_distance(x1, y1, cx, cy) - rs[0]);
-                    val2 = abs(point_distance(x1, y1, cx, cy) - rs[1]);
+			val1 = abs(point_distance(x1, y1, cx, cy) - rs[0]);
+			val2 = abs(point_distance(x1, y1, cx, cy) - rs[1]);
 
-                    new_dis = std::min(val1, val2);
+			new_dis = std::min(val1, val2);
 
-                    if(old_dis>new_dis || new_dis<allowed || do_bad || y1 > y_bounds[0] || y1  < y_bounds[1] ||  x1 > x_bounds[0] || x1 < x_bounds[1] ){
-                        x[element] = x1;
-                        y[element] = y1;
-                        found = 1;
-                    }
-                }
-
-            }
-
-
-
-
-
-
-
+			if((old_dis>new_dis || new_dis<allowed || do_bad) && y1 > y_bounds[0] && y1  < y_bounds[1] &&  x1 > x_bounds[0] && x1 < x_bounds[1] ){
+				x[element] = x1;
+				y[element] = y1;
+				found = 1;
+			}
+		}
+	}
     return{ x, y};
 }
 
