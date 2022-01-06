@@ -244,7 +244,20 @@ auto run_patern(vector<double> x, vector<double> y, int length, const string sha
 }
 
 
-int main() {
+int main(int argc, char **argv) {
+	
+	if (!strcmp(argv[1], "-h")) {
+		
+        // open_documentation
+        std::string op = std::string("start ").append("https://www.google.com/");
+        system(op.c_str());
+		
+    }else if(!strcmp(argv[2], "-hw")){
+
+    }
+	
+	
+	
 	
     string names[5]= {"Average x", "Average y", "Variance x", "Variance y", "Correlation xy"};
 	vector<vector<double>> init_data;
