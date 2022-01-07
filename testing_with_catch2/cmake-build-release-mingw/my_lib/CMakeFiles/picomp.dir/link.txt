@@ -1,0 +1,2 @@
+C:\MinGW\MinGW\bin\ar.exe qc libpicomp.a CMakeFiles/picomp.dir/src/compute_pi.cpp.obj
+C:\MinGW\MinGW\bin\ranlib.exe libpicomp.a
