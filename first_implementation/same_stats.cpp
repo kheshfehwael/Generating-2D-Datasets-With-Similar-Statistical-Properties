@@ -7,6 +7,10 @@
 #include <fstream>
 #include <chrono>
 #include "interface_CSV.cpp"
+#include <string>
+#include <fstream>
+#include <windows.h>
+
 
 using namespace std;
 
@@ -242,15 +246,33 @@ auto run_patern(vector<double> x, vector<double> y, int length, const string sha
     cout << "\n" << changes << " changes made\n";
     return{x,y};
 }
+void read_docu(string line){
 
+    ifstream myReadFile;
+    myReadFile.open(line);
+    char output[100];
+    if (myReadFile.is_open()) {
+        while (!myReadFile.eof()) {
+            myReadFile >> output;
+            if(output == " "){cout <<  endl;}
+            cout<<output;
+        }
+    }
+    myReadFile.close();
+}
 
 int main(int argc, char **argv) {
+	
+     	
+		
+		
+	
 	
 	if (!strcmp(argv[1], "-h")) {
 		
         // open_documentation
-        std::string op = std::string("start ").append("https://www.google.com/");
-        system(op.c_str());
+        string str("C:\\Users\\MHD WAEL KHESHFEH\\Desktop\\path\\project_2.ipynb");
+        read_docu(str);
 		
     }else if(!strcmp(argv[2], "-hw")){
 
