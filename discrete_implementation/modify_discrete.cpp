@@ -1,8 +1,10 @@
+#include <iostream>
 #include <vector>
-#include<algorithm>
+#include <algorithm>
+#include <string>
+
 
 using  namespace  std;
-
 
 int int_round(double x){
 	return (int)(x+0.5 - (x<0));
@@ -42,4 +44,37 @@ vector<double> modify_vector_back(vector<int>& x, int* parameters, int dim, int 
 		original[i] = (double)(x[i] - offset)/factor;
 	}
 	return original;
+}
+
+void change_params(int* iter, int* shake, double* max_temp){
+	int prev_iter = *iter;
+	int prev_shake = *shake;
+	double prev_matx_temp = *max_temp;
+	string input;
+	cin.clear();
+	fflush(stdin);
+	getline(cin, input);
+	input.append(" ");
+	size_t pos = input.find(" ");
+	size_t pos_inner = 0;
+	string token,param;
+	while (pos != string::npos) {
+		token = input.substr(0, pos);
+		pos_inner = token.find("=");
+		param = token.substr(0, pos_inner);
+		token = token.substr(pos_inner+1, token.length());
+		if(!param.compare("iter")){
+			*iter = stoi(token);
+		}else if(!param.compare("shake")){
+			*shake = stoi(token);
+		}else if(!param.compare("max_temp")){
+			*max_temp = stod(token);
+		}
+			
+		input.erase(0, pos+1);
+		pos = input.find(" ");
+	}
+	*iter = *iter == 0 ? prev_iter : *iter; 
+	*shake = *shake == 0 ? prev_shake : *shake; 
+	*max_temp = *max_temp == 0 ? prev_matx_temp : *max_temp; 
 }
