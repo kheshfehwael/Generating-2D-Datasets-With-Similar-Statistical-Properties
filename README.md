@@ -23,13 +23,13 @@ Either download the zip package or you can clone this repository to your project
 
 Getting started with Generating-2D-Datasets: 
 
-    heart_test -h -i { /* ... */ }
+    heart_test -h -i 
     
     
 If you need help reading the documentation, please contact Flag: 
 
 
-    heart_test --help { /* ... */ }
+    heart_test --help 
 
 
 ## Dependencies for Project generator
