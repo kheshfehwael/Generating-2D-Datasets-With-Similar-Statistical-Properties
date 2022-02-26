@@ -1,1 +1,0 @@
- my_lib/libpicomp.a C:/MinGW/MinGW/lib/libgomp.a C:/MinGW/MinGW/x86_64-w64-mingw32/lib/libmingwthrd.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

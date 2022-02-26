@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\picomp_tests.dir/objects.a
-C:\MinGW\MinGW\bin\ar.exe cr CMakeFiles\picomp_tests.dir/objects.a @CMakeFiles\picomp_tests.dir\objects1.rsp
-C:\MinGW\MinGW\bin\g++.exe -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles\picomp_tests.dir/objects.a -Wl,--no-whole-archive -o picomp_tests.exe -Wl,--out-implib,libpicomp_tests.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\picomp_tests.dir\linklibs.rsp
