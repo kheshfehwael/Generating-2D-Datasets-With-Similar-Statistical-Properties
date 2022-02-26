@@ -35,14 +35,14 @@ for more information.
 If you need help reading the documentation, please contact Flag: 
 
 
-    heart_test --help 
+    same_stats slanted_less heart_test -h -i
 
 
 ## Dependencies for Project generator
 
-* Clion 
+
 * Cmake 
 * Project Jupyter 
-* Eclipse (Makefile with GCC ARM) 
-* Sublime (Makefile with GCC ARM) 
+
+
 * Visual studio (Makefile with GCC ARM) 
