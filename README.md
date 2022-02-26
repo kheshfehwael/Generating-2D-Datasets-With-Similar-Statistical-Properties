@@ -20,9 +20,16 @@ This project allows you to modulate CSv datasets and generate the data based on 
 
 Either download the zip package or you can clone this repository to your project directory.
 
-If you need help reading the documentation, please contact Flag: 
+
+Getting started with Generating-2D-Datasets: 
 
     heart_test -h -i { /* ... */ }
+    
+    
+If you need help reading the documentation, please contact Flag: 
+
+
+    heart_test --help { /* ... */ }
 
 
 ## Dependencies for Project generator
