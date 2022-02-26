@@ -27,7 +27,7 @@ Getting started with Generating-2D-Datasets:
     
   or 
     
-    `same_stats --usage'
+    same_stats --usage
     
 for more information.
     
