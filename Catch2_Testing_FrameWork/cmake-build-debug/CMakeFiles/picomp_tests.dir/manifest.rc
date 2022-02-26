@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "D:/testing_with_catch - Kopie - Kopie/cmake-build-debug/CMakeFiles/picomp_tests.dir/embed.manifest"

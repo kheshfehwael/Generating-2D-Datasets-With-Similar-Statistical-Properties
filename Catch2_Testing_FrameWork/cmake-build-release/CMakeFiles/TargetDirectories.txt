@@ -1,0 +1,8 @@
+D:/testing_with_catch - Kopie - Kopie/cmake-build-release/CMakeFiles/picomp_tests.dir
+D:/testing_with_catch - Kopie - Kopie/cmake-build-release/CMakeFiles/edit_cache.dir
+D:/testing_with_catch - Kopie - Kopie/cmake-build-release/CMakeFiles/rebuild_cache.dir
+D:/testing_with_catch - Kopie - Kopie/cmake-build-release/tools/CMakeFiles/same_stats_tools.dir
+D:/testing_with_catch - Kopie - Kopie/cmake-build-release/tools/CMakeFiles/edit_cache.dir
+D:/testing_with_catch - Kopie - Kopie/cmake-build-release/tools/CMakeFiles/rebuild_cache.dir
+D:/testing_with_catch - Kopie - Kopie/cmake-build-release/catch/CMakeFiles/edit_cache.dir
+D:/testing_with_catch - Kopie - Kopie/cmake-build-release/catch/CMakeFiles/rebuild_cache.dir
