@@ -27,10 +27,10 @@ If you need help reading the documentation, please contact Flag:
 
 ## Dependencies for Project generator
 
-* `[.]` - Clion 
-* `[.]` - Cmake
-* `[.]` -.
-* `[.]` -.
-* `[.]` - Eclipse (Makefile with GCC ARM)
-* `[.]` - Sublime (Makefile with GCC ARM)
-* `[.]` - Visual studio (Makefile with GCC ARM)
+** Clion **
+** Cmake **
+****
+****
+** Eclipse (Makefile with GCC ARM)**
+** Sublime (Makefile with GCC ARM)**
+** Visual studio (Makefile with GCC ARM)**
