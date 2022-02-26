@@ -25,6 +25,12 @@ Getting started with Generating-2D-Datasets:
 
     heart_test -h -i 
     
+  or 
+    
+    `same_stats --usage'
+    
+for more information.
+    
     
 If you need help reading the documentation, please contact Flag: 
 
