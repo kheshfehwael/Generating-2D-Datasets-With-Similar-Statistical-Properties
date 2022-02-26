@@ -11,7 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_subdirectory(catch)
 
 # create executable with all tests
-add_executable(picomp_tests catch_main.cpp catch_tests_picomp.cpp)
+add_executable(same_stats_tests catch_main.cpp catch_tests_same_stats.cpp catch_tests_same_stats.cpp)
 
 # link libraries picomp and catch to executable
-target_link_libraries(picomp_tests PRIVATE same_stats_tools PRIVATE catch)
+target_link_libraries(same_stats_tests PRIVATE same_stats_tools PRIVATE catch)
