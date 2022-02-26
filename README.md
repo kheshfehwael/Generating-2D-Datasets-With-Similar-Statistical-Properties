@@ -29,8 +29,7 @@ If you need help reading the documentation, please contact Flag:
 
 ** Clion **
 ** Cmake **
-** **
-** **
+** Project Jupyter **
 ** Eclipse (Makefile with GCC ARM)**
 ** Sublime (Makefile with GCC ARM)**
 ** Visual studio (Makefile with GCC ARM)**
