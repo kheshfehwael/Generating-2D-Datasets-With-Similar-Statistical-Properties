@@ -8,17 +8,10 @@ This project allows you to modulate CSv datasets and generate the data based on 
 
 
 **Contents**<br>
-[How to use it](#How-to-use-it)<br>
-[Teil 1 ](#tag-aliases)<br>
-[Teil 1 ](#bdd-style-test-cases)<br>
-[Teil 1 ](#type-parametrised-test-cases)<br>
-[Teil 1 ](#signature-based-parametrised-test-cases)<br>
+[How to use it](#how-to-use-it)<br>
+[Dependencies for Project generator](#dependencies-for-Project-generator)<br>
 
-[Tags](#tags)<br>
-[Tag aliases](#tag-aliases)<br>
-[BDD-style test cases](#bdd-style-test-cases)<br>
-[Type parametrised test cases](#type-parametrised-test-cases)<br>
-[Signature based parametrised test cases](#signature-based-parametrised-test-cases)<br>
+
 
 ## How to use it
 
