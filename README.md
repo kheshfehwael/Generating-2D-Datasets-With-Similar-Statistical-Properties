@@ -20,7 +20,7 @@ Either download the zip package or you can clone this repository to your project
 
 Getting started with Generating-2D-Datasets: 
 
-    heart_test -h -i 
+    same_stats slanted_less heart_test -h -i 
     
   or 
     
@@ -32,7 +32,7 @@ for more information.
 If you need help reading the documentation, please contact Flag: 
 
 
-    same_stats slanted_less heart_test -h -i
+    same_stats --help
 
 
 ## Dependencies for Project generator
