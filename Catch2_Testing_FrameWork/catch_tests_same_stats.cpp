@@ -3,9 +3,7 @@
 #include <vector>
 #include <math.h>
 #include <random>
-#include <random>
-#include <tuple>
-#include <fstream>
+
 #include "tools/include/same_stats_tools.h"
 
 using namespace std;
@@ -14,7 +12,7 @@ using namespace std;
 TEST_CASE("Test case for the read_csv function ", "get_stat")
 {
 
-    // Test Read CSV
+
     vector<vector < double>> init_data, vec_exact;
     bool header = true, csv_index = true;
     int len = 182;
@@ -803,7 +801,6 @@ TEST_CASE(" Test the geting modification of parameters ", "get_stat")
 TEST_CASE(" Test the sequence of the curve functions ", "get_stat")
 {
 
-    // Test Read CSV
     vector<vector < double>> init_data, vec_exact;
     bool header = true, csv_index = true;
     int len = 182;
@@ -890,7 +887,7 @@ TEST_CASE(" Test the sequence of the curve functions ", "get_stat")
     vector<double> x_exact = extract_vector(init_data, 1);
     vector<double> y_exact = extract_vector(init_data, 2);
 
-    // Discretize initial dataset
+
     vector<int> x = modify_vector(x_exact, parameters, 1, len);
     vector<int> y = modify_vector(y_exact, parameters, 2, len);
 
