@@ -2,9 +2,7 @@
 # Visualize Your Data: Generating Datasets with Dissimilar Custom Shapes and Similar Statistical Properties
 
 
-Converting the main project /link from main project /a subtask, and how to move to the new way of generation for better visualization methods of data was the biggest part of this project. 
-
-This project allows you to modulate CSV datasets and generate the data based on the mathematical rules defined in the datasets. define a project in text form using YAML files. No one should ever commit an IDE-specific project file to a repository again!
+This repository contains the Projct of Stephan Olbrich and Wael Mohamad Kheshfeh regarding the course Algorithm Engineering WiSe 2021/2022. The structure of the repository is as follows: The folder "project" contains the actual program. Inside of that there are subdirectories in "tools" with which a library is created for the main program "same_stats.cpp" to be used. In the directory "additional_files" .csv and .txt files are located which can be used to work with the program. It is recommended to select this directory as the working directory. The folder "Catch2_Testing_FrameWork" has a similar structure and contains the testing framework to the program. In the main directory you can also find the corresponding paper to our project named "Visualize Your Data.pdf".
 
 
 **Contents**<br>
