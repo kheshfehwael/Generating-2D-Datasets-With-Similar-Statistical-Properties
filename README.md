@@ -6,7 +6,7 @@ This repository contains the project submit of Stephan Olbrich and Wael Mohamad 
 
 <img src="https://user-images.githubusercontent.com/92784846/156038153-ab7096c4-c754-4b74-8bfc-7c739e5536af.jpg" width="240" height="240"> <img src="https://user-images.githubusercontent.com/92784846/156038727-106ea6d9-da9c-4361-9f61-cb42395f38e2.jpg" width="240" height="240"> <img src="https://user-images.githubusercontent.com/92784846/156038734-cada3326-e61a-45da-8df2-ceee991aae04.jpg" width="240" height="240"> <img src="https://user-images.githubusercontent.com/92784846/156038740-785f133c-adf1-4c24-a629-1cb6b3b0c6b5.jpg" width="240" height="240">
 
-**Contents**<br>
+## **Contents**<br>
 [How to use it](#how-to-use-it)<br>
 [Structure](#structure)<br>
 [Dependencies for Project generator](#dependencies-for-Project-generator)<br>
