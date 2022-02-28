@@ -33,7 +33,7 @@ If you need help reading the documentation, please contact Flag:
 
 ## Structure
 
-The Program is structured as follows. The main file "same_stats.cpp" acts as the interface for the user through the command line and does the all the modifications on the datasets. The subdirectory "tools" is created as a library with the help of CMake. This library contains functions that are used by the main file. Those functions are used for the calculation of the statistics, as interface to read/write .csv files, discretize the datasets and calculate the distance matrix.
+The Program is structured as follows: The main file "same_stats.cpp" acts as the interface for the user through the command line and does all the modifications on the datasets. The subdirectory "tools" is created as a library with the help of CMake. This library contains functions that are used by the main file. Those functions are used for the calculation of the statistics, as interface to read/write .csv files, discretize the datasets and calculate the distance matrix.
 
 ## Dependencies for Project generator
 
