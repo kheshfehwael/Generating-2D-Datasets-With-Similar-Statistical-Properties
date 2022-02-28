@@ -12,10 +12,12 @@ This repository contains the project submit of Stephan Olbrich and Wael Mohamad 
 
 ## How to use it
 
-Either download the zip package or you can clone this repository to your project directory.
+There are two options, how to use it. Either you download zip-package or you can clone this repository to your project directory.
+If you use the repository directly, you should be aware that the project generator uses relative paths, e.g. input and output paths.
+To familiarize yourself with the software, read our Project Paper. A good starting point is the "Background" guide. There are further sections describing the individual building blocks of the project generator.
 
 
-Getting started with Generating-2D-Datasets: 
+Once installation, test the project using the Generating 2D Datasets function: 
 
     same_stats slanted_less heart_test -h -i 
     
