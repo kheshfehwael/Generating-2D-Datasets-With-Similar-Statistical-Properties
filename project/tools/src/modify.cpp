@@ -39,6 +39,15 @@ void get_modification_parameters(int* parameters, vector<double> x, vector<doubl
 	
 	parameters[0] = x_dist!=0 ? (int)(window/x_dist) : 1;	// factor x
 	parameters[1] = y_dist!=0 ? (int)(window/y_dist) : 1;
+    // this part guaranties no stretching of the target shape.
+    // if the ratio (x_max-x_min)/(y_max-y_min) is close to 1
+    // then the following if statement can be commended out.
+    // we did our experiments without this part.
+    /*if(parameters[0] < parameters[1]){
+        parameters[1] = parameters[0];
+    }else{
+        parameters[0] = parameters[1];
+    }*/
 	parameters[2] = (int)(lower_window_bound - x_min*parameters[0]);	// offset x
 	parameters[3] = (int)(lower_window_bound - y_min*parameters[1]);
 }
