@@ -8,8 +8,6 @@ This repository contains the Projct of Stephan Olbrich and Wael Mohamad Kheshfeh
 **Contents**<br>
 [How to use it](#how-to-use-it)<br>
 [Dependencies for Project generator](#dependencies-for-Project-generator)<br>
-[Structure](#structure)<br>
-
 
 ## How to use it
 
